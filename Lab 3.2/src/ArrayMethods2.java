@@ -19,13 +19,19 @@ public class ArrayMethods2 {
 	public static String[] merge(String[] list1, String[] list2)
 	{
 		//precondition: both list1 and list2 contains Strings in alphabetical order from a to z 
+		int x; int y;
 		for(int a=0; a<list1.length; a++)
 		{
-			for(int b=0; b<list2.length; a++)
+			for(int b=0; b<list2.length; b++)
+			{
+				if(list1[a] <= list2[b])
+				{
+					
+			}
 		}
-		
-		
-		
+
+ 
+    }
 		
 		
 		
