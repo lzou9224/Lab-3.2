@@ -1,6 +1,6 @@
 import java.util.Arrays;
 //Lingli Zou
-//2/1/2017
+//2/8/2018
 //Lab 3.2
 
 public class ArrayMethods2 {
