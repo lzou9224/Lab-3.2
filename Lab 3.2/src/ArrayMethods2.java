@@ -11,29 +11,38 @@ public class ArrayMethods2 {
 		String[] b = {"donuts", "chips", "avacado", "biscuits", "eggs"};
 		merge(a, b);
 		
-		int[] list= {5,3,8,6,1,9,2};
 		System.out.println(Arrays.toString(a));
-		
 	}
 	
 	public static String[] merge(String[] list1, String[] list2)
 	{
 		//precondition: both list1 and list2 contains Strings in alphabetical order from a to z 
-		int x; int y;
-		for(int a=0; a<list1.length; a++)
+		int indexLeft=0; 
+		int indexRight=0; 
+		int indexTotal=0;
+		
+		for(int x=0; x<)
+		while(indexLeft <list1.length && indexRight < list2.length)
 		{
-			for(int b=0; b<list2.length; b++)
+			if(list1[indexLeft].compareTo(list2[indexRight])<=0)
 			{
-				if(list1[a] <= list2[b])
-				{
-					
+				indexTotal[indexLeft]
 			}
+			if else(list1[indexLeft].compareTo(list2[indexRight])>0)
+			{
+				
+			}
+			else
+			{
+				
+				
+					
 		}
+			return indexTotal;
 
- 
     }
 		
-		
+
 		
 		//Returns: An array of the two lists merged together. The result must be in alphabetical order.
 	}
