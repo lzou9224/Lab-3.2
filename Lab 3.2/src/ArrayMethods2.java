@@ -7,8 +7,8 @@ public class ArrayMethods2 {
 	
 	public static void main(String[] args)
 	{
-		String[] a = {"andy", "bapple", "cbanana", "dragon", "ending"};
-		String[] b = {"aonuts", "bhips", "cvacado", "discuits", "eggs"};
+		String[] a = {"avacado", "banana", "cherry", "diamond", "ending"};
+		String[] b = {"apple", "biscuits", "candy", "discuits", "eggs"};
 		String[] total= merge(a,b);
 		
 		
@@ -53,8 +53,7 @@ public class ArrayMethods2 {
 			t++;
 		}
 		
-		return total;
-		//Returns: An array of the two lists merged together. The result must be in alphabetical order.
+		return total;	//returns an array of the two lists merged together
 	}
 	
 	public static int partition(int[] list)
