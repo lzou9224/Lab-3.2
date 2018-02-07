@@ -7,43 +7,53 @@ public class ArrayMethods2 {
 	
 	public static void main(String[] args)
 	{
-		String[] a = {"cherry", "apple", "banana", "dragonfruit", "eggplant"};
-		String[] b = {"donuts", "chips", "avacado", "biscuits", "eggs"};
-		merge(a, b);
+		String[] a = {"andy", "bapple", "cbanana", "dragon", "ending"};
+		String[] b = {"aonuts", "bhips", "cvacado", "discuits", "eggs"};
+		String[] total= merge(a,b);
 		
-		System.out.println(Arrays.toString(a));
+		
+		System.out.println(Arrays.toString(total));
 	}
 	
 	public static String[] merge(String[] list1, String[] list2)
 	{
 		//precondition: both list1 and list2 contains Strings in alphabetical order from a to z 
-		int indexLeft=0; 
-		int indexRight=0; 
-		int indexTotal=0;
-		
-		for(int x=0; x<)
-		while(indexLeft <list1.length && indexRight < list2.length)
+		int left=0; 
+		int right=0; 
+		int t=0;
+		String[] total= new String[list1.length+list2.length];
+
+		while(left<list1.length && right<list2.length)
 		{
-			if(list1[indexLeft].compareTo(list2[indexRight])<=0)
+			if(list1[left].compareTo(list2[right])>=0)
 			{
-				indexTotal[indexLeft]
+				total[t]=list2[right];
+				right++;
+				t++;
 			}
-			if else(list1[indexLeft].compareTo(list2[indexRight])>0)
+			else if(list1[left].compareTo(list2[right])<0)
 			{
-				
+				total[t]=list1[left];
+				left++;
+				t++;
 			}
-			else
-			{
-				
-				
-					
+		}		
+		
+		while(left<list1.length)
+		{
+			total[t]=list1[left];
+			left++;
+			t++;
 		}
-			return indexTotal;
 
-    }
+		while(right<list2.length)
+		{
+			total[t]=list2[right];
+			right++;
+			t++;
+		}
 		
-
-		
+		return total;
 		//Returns: An array of the two lists merged together. The result must be in alphabetical order.
 	}
 	
