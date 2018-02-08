@@ -68,16 +68,26 @@ public class ArrayMethods2 {
 			t++;
 		}
 		
-		return total;	//returns an array of the two lists merged together
+		//returns an array of the two lists merged together
+		return total;	
 	}
 	
 	public static int partition(int[] list)
 	{
 		
-		//*Write a method that partitions a list using the first element as the pivot. You should return the
-		//integer position of the pivot in the newly partitioned array. The original array should be rearranged so that
-		//all the elements before the pivot are less than or equal to the pivot and all the elements after the pivot are
-		//greater than the pivot.
+		//the first element is the pivot. 
+		//return the integer position of the pivot in the newly partitioned array
+		
+		int pIndex=0;
+		int checkIndex=list.length;
+		
+		while(pIndex != checkIndex)
+		{
+			
+		}
+		
+		
+		
 		
 		
 	}
