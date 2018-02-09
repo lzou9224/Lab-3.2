@@ -76,19 +76,49 @@ public class ArrayMethods2 {
 	{
 		
 		//the first element is the pivot. 
-		//return the integer position of the pivot in the newly partitioned array
-		
-		int pIndex=0;
-		int checkIndex=list.length;
+		int temp;
+		int pIndex=0; //pIndex = pivot
+		int checkIndex=list.length; //checkIndex = last number of the array
 		
 		while(pIndex != checkIndex)
 		{
+			if(pIndex < checkIndex)
+			{
+				
+				if(list[pIndex] < list[checkIndex])
+				{
+					checkIndex--;
+				}
 			
-		}
+				if(list[checkIndex] > list[pIndex])
+				{
+					temp = list[pIndex];
+					list[pIndex] = list[checkIndex];
+					list[checkIndex] = temp;
+					checkIndex++;
+				}
+			}
+			
+			else if(pIndex > checkIndex)
+			{
+				if(list[pIndex] > list[checkIndex])
+				{
+					checkIndex++;
+				}
+			
+				if(list[checkIndex] < list[pIndex])
+				{
+					temp = list[checkIndex];
+					list[checkIndex] = list[pIndex];
+					list[pIndex] = temp;
+					pIndex++;
+				}
+			}
 		
-		
-		
-		
-		
+	    //return the integer position of the pivot in the newly partitioned array
+	}	
+		return pIndex;
+
 	}
 }
+
