@@ -10,7 +10,7 @@ public class ArrayMethods2 {
 		//testing arrays
 		String[] test1 = {"apple", "cucumber", "microsoft", "zorro"};
 		String[] test2 = {"banana", "cherry", "mahogany", "oreos", "pinata"};
-		int[] test3 = {3,4,2,7,12,22,0,1};
+		int[] test3 = {3,4,2,7,1};
 		
 		//merge test
 		long start= System.nanoTime();
@@ -75,10 +75,9 @@ public class ArrayMethods2 {
 	public static int partition(int[] list)
 	{
 		
-		//the first element is the pivot. 
 		int temp;
-		int pIndex=0; //pIndex = pivot
-		int checkIndex=list.length; //checkIndex = last number of the array
+		int pIndex=0; //the first element is the pivot
+		int checkIndex=list.length; //checkIndex is the last number of the array
 		
 		while(pIndex != checkIndex)
 		{
@@ -115,9 +114,9 @@ public class ArrayMethods2 {
 				}
 			}
 		
-	    //return the integer position of the pivot in the newly partitioned array
 	}	
 		return pIndex;
+	    //return the integer position of the pivot in the newly partitioned array
 
 	}
 }
