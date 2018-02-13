@@ -114,9 +114,9 @@ public class ArrayMethods2 {
 				}
 			}
 		
-	}	
+	}		   
+		//return the integer position of the pivot in the newly partitioned array
 		return pIndex;
-	    //return the integer position of the pivot in the newly partitioned array
 
 	}
 }
