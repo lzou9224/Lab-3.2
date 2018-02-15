@@ -77,23 +77,26 @@ public class ArrayMethods2 {
 		
 		int temp;
 		int pIndex=0; //the first element is the pivot
-		int checkIndex=list.length; //checkIndex is the last number of the array
+		int checkIndex=list.length-1; //checkIndex is the last number of the array
 		
 		while(pIndex != checkIndex)
 		{
 			if(pIndex < checkIndex)
 			{
-				
 				if(list[pIndex] < list[checkIndex])
 				{
 					checkIndex--;
 				}
 			
-				if(list[checkIndex] > list[pIndex])
+				if(list[checkIndex] <= list[pIndex])
 				{
 					temp = list[pIndex];
 					list[pIndex] = list[checkIndex];
 					list[checkIndex] = temp;
+					
+					temp= checkIndex;
+					checkIndex= pIndex;
+					pIndex=temp;
 					checkIndex++;
 				}
 			}
@@ -105,12 +108,17 @@ public class ArrayMethods2 {
 					checkIndex++;
 				}
 			
-				if(list[checkIndex] < list[pIndex])
+				if(list[checkIndex] > list[pIndex])
 				{
 					temp = list[checkIndex];
 					list[checkIndex] = list[pIndex];
 					list[pIndex] = temp;
-					pIndex++;
+					
+					temp=pIndex;
+					pIndex= checkIndex;
+					checkIndex=temp;
+					checkIndex--;
+					
 				}
 			}
 		
